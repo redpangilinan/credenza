@@ -189,15 +189,23 @@ export {
 ```
 
 </details>
-<br>
 
-4. Make sure to update the import paths based on your project structure.
+4. Update the import paths based on your project structure.
+
+5. If you want to enable background scaling, wrap your app with the `vaul-drawer-wrapper`.
+
+```html
+<div vaul-drawer-wrapper="" className="bg-background">{children}</div>
+```
+
+See my implementation at [layout.tsx](src/app/layout.tsx). Make sure to update the background color to match your project's theme.
 
 ## Usage
 
 ```tsx
 import {
   Credenza,
+  CredenzaBody,
   CredenzaClose,
   CredenzaContent,
   CredenzaDescription,
@@ -211,13 +219,19 @@ import {
 ```tsx
 <Credenza>
   <CredenzaTrigger asChild>
-    <button>Open</button>
+    <button>Open modal</button>
   </CredenzaTrigger>
   <CredenzaContent>
     <CredenzaHeader>
-      <CredenzaTitle>Welcome to Credenza</CredenzaTitle>
-      <CredenzaDescription>This is a sample modal</CredenzaDescription>
+      <CredenzaTitle>Credenza</CredenzaTitle>
+      <CredenzaDescription>
+        A responsive modal component for shadcn/ui.
+      </CredenzaDescription>
     </CredenzaHeader>
+    <CredenzaBody>
+      This component is built using shadcn/ui&apos;s dialog and drawer
+      component, which is built on top of Vaul.
+    </CredenzaBody>
     <CredenzaFooter>
       <CredenzaClose asChild>
         <button>Close</button>
@@ -226,3 +240,8 @@ import {
   </CredenzaContent>
 </Credenza>
 ```
+
+## Credits
+
+- [shadcn/ui](https://github.com/shadcn-ui/ui) by [shadcn](https://github.com/shadcn)
+- [Vaul](https://github.com/emilkowalski/vaul) by [emilkowalski](https://github.com/emilkowalski)
