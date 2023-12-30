@@ -47,6 +47,25 @@ export default function Home() {
                   drawer component, which is built on top of Vaul.
                 </p>
                 <p>
+                  It shows a{" "}
+                  <Link
+                    href="https://ui.shadcn.com/docs/components/dialog"
+                    target="_blank"
+                    className="underline"
+                  >
+                    dialog modal
+                  </Link>{" "}
+                  for desktop view and a{" "}
+                  <Link
+                    href="https://vaul.emilkowal.ski/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    bottom drawer
+                  </Link>{" "}
+                  for mobile view.
+                </p>
+                <p>
                   The documentation for installation and usage can be found on
                   the{" "}
                   <Link
