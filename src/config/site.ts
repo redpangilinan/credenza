@@ -5,7 +5,7 @@ import { env } from "@/env.mjs"
 export const siteConfig: SiteConfig = {
   name: "Credenza",
   author: "redpangilinan",
-  description: "A responsive modal component for shadcn/ui.",
+  description: "Ready-made responsive modal component for shadcn/ui.",
   keywords: [
     "Next.js",
     "React",
