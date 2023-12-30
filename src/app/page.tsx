@@ -1,9 +1,12 @@
 import * as React from "react"
+import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { Button, buttonVariants } from "@/components/ui/button"
 import {
   Credenza,
+  CredenzaBody,
   CredenzaClose,
   CredenzaContent,
   CredenzaDescription,
@@ -12,38 +15,72 @@ import {
   CredenzaTitle,
   CredenzaTrigger,
 } from "@/components/ui/credenza"
+import { Icons } from "@/components/icons"
 import { ModeToggle } from "@/components/mode-toggle"
 
 export default function Home() {
   return (
     <main className="flex h-screen items-center justify-center">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-        <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="text-5xl font-semibold md:text-6xl">
           {siteConfig.name}
         </h1>
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
           {siteConfig.description}
         </p>
         <div className="flex gap-2">
+          <ModeToggle />
           <Credenza>
             <CredenzaTrigger asChild>
-              <Button>Try it</Button>
+              <Button>Open modal</Button>
             </CredenzaTrigger>
             <CredenzaContent>
               <CredenzaHeader>
-                <CredenzaTitle>Welcome to Credenza</CredenzaTitle>
+                <CredenzaTitle>Credenza</CredenzaTitle>
                 <CredenzaDescription>
-                  This is a sample modal
+                  A responsive modal component for shadcn/ui.
                 </CredenzaDescription>
               </CredenzaHeader>
+              <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
+                <p>
+                  This component is built using shadcn/ui&apos;s dialog and
+                  drawer component, which is built on top of Vaul.
+                </p>
+                <p>
+                  The documentation for installation and usage can be found on
+                  the{" "}
+                  <Link
+                    href={siteConfig.links.github}
+                    target="_blank"
+                    className="underline"
+                  >
+                    GitHub repository
+                  </Link>
+                  .
+                </p>
+              </CredenzaBody>
               <CredenzaFooter>
+                <Link
+                  href={siteConfig.links.github}
+                  target="_blank"
+                  className={cn(buttonVariants({ variant: "default" }))}
+                >
+                  Documentation
+                </Link>
                 <CredenzaClose asChild>
-                  <Button>Close</Button>
+                  <Button variant="outline">Close</Button>
                 </CredenzaClose>
               </CredenzaFooter>
             </CredenzaContent>
           </Credenza>
-          <ModeToggle />
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            className={cn(buttonVariants({ variant: "ghost" }))}
+          >
+            <span>GitHub</span>
+            <Icons.link className="ml-2 h-4 w-4" />
+          </Link>
         </div>
       </div>
     </main>
