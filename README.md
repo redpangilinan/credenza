@@ -2,6 +2,8 @@
 
 A responsive modal component for shadcn/ui.
 
+![Demo](https://github.com/redpangilinan/credenza/assets/82772769/d22580b3-9dbc-4a56-95e9-15b4bd278ff0)
+
 ## Installation
 
 1. Copy the `dialog` and `drawer` component from shadcn/ui.
