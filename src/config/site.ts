@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
     author: "https://rdev.pro",
   },
   links: {
-    github: "https://github.com/redpangilinan/next-entree",
+    github: "https://github.com/redpangilinan/credenza",
   },
-  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
+  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png`,
 }
