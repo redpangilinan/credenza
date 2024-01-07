@@ -119,30 +119,10 @@ const CredenzaTitle = ({ className, children, ...props }: CredenzaProps) => {
 }
 
 const CredenzaBody = ({ className, children, ...props }: CredenzaProps) => {
-  const isDesktop = useMediaQuery(desktop)
-
-  const DialogBody = ({ className, children, ...props }: CredenzaProps) => {
-    return (
-      <div className={className} {...props}>
-        {children}
-      </div>
-    )
-  }
-
-  const DrawerBody = ({ className, children, ...props }: CredenzaProps) => {
-    return (
-      <div className={cn("px-4", className)} {...props}>
-        {children}
-      </div>
-    )
-  }
-
-  const CredenzaBody = isDesktop ? DialogBody : DrawerBody
-
   return (
-    <CredenzaBody className={className} {...props}>
+    <div className={cn("px-4 md:px-0", className)} {...props}>
       {children}
-    </CredenzaBody>
+    </div>
   )
 }
 
