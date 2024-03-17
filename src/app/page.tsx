@@ -66,21 +66,20 @@ export default function Home() {
                   for mobile view.
                 </p>
                 <p>
-                  The documentation for installation and usage can be found on
-                  the{" "}
+                  The documentation for installation and usage can be found{" "}
                   <Link
-                    href={siteConfig.links.github}
+                    href={`${siteConfig.links.github}/blob/main/README.md`}
                     target="_blank"
                     className="underline"
                   >
-                    GitHub repository
+                    here
                   </Link>
                   .
                 </p>
               </CredenzaBody>
               <CredenzaFooter>
                 <Link
-                  href={siteConfig.links.github}
+                  href={`${siteConfig.links.github}/blob/main/README.md`}
                   target="_blank"
                   className={cn(buttonVariants({ variant: "default" }))}
                 >
