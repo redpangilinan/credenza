@@ -18,6 +18,12 @@ npx shadcn-ui@latest add drawer
 
 Alternatively, if you are not using shadcn/ui cli, you can manually copy the components from [shadcn/ui](https://ui.shadcn.com/docs) or directly copy from [dialog.tsx](src/components/ui/dialog.tsx) and [drawer.tsx](src/components/ui/drawer.tsx).
 
+If you copied the drawer component manually, make sure to install vaul.
+
+```
+npm install vaul
+```
+
 2. Copy the `useMediaQuery` hook: [use-media-query.tsx](src/hooks/use-media-query.tsx)
 
 ```tsx
@@ -51,9 +57,9 @@ export function useMediaQuery(query: string) {
 "use client"
 
 import * as React from "react"
-import { useMediaQuery } from "@/hooks/use-media-query"
 
 import { cn } from "@/lib/utils"
+import { useMediaQuery } from "@/hooks/use-media-query"
 import {
   Dialog,
   DialogClose,
