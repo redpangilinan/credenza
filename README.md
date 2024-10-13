@@ -234,6 +234,8 @@ import {
 } from "@/components/ui/credenza"
 ```
 
+Basic usage with `CredenzaTrigger`
+
 ```tsx
 <Credenza>
   <CredenzaTrigger asChild>
@@ -257,6 +259,41 @@ import {
     </CredenzaFooter>
   </CredenzaContent>
 </Credenza>
+```
+
+Using state to open modal
+
+```tsx
+function StateModal() {
+  const [open, setOpen] = React.useState(false)
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open with State</Button>
+
+      <Credenza open={open} onOpenChange={setOpen}>
+        <CredenzaContent>
+          <CredenzaHeader>
+            <CredenzaTitle>Credenza</CredenzaTitle>
+            <CredenzaDescription>
+              A responsive modal component for shadcn/ui.
+            </CredenzaDescription>
+          </CredenzaHeader>
+          <CredenzaBody>This modal got triggered using state</CredenzaBody>
+          <CredenzaFooter>
+            <CredenzaClose asChild>
+              <Button>Close</Button>
+            </CredenzaClose>
+          </CredenzaFooter>
+        </CredenzaContent>
+      </Credenza>
+    </>
+  )
+}
 ```
 
 ## Credits
