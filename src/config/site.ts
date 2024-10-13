@@ -20,6 +20,7 @@ export const siteConfig: SiteConfig = {
   },
   links: {
     github: "https://github.com/redpangilinan/credenza",
+    kofi: "https://ko-fi.com/redpangilinan",
   },
   ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png`,
 }
