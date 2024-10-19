@@ -70,8 +70,7 @@ function Installation() {
           Copy the <InlineCode>dialog</InlineCode> and{" "}
           <InlineCode>drawer</InlineCode> components from shadcn/ui
         </p>
-        <CodeBlock>npx shadcn-ui@latest add dialog</CodeBlock>
-        <CodeBlock>npx shadcn-ui@latest add drawer</CodeBlock>
+        <CodeBlock>npx shadcn@latest add dialog drawer</CodeBlock>
       </div>
       <div className="space-y-4">
         <p>

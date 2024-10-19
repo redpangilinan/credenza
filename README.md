@@ -9,11 +9,7 @@ A responsive modal component for shadcn/ui.
 1. Copy the `dialog` and `drawer` component from shadcn/ui.
 
 ```bash
-npx shadcn-ui@latest add dialog
-```
-
-```bash
-npx shadcn-ui@latest add drawer
+npx shadcn@latest add dialog drawer
 ```
 
 Alternatively, if you are not using shadcn/ui cli, you can manually copy the components from [shadcn/ui](https://ui.shadcn.com/docs) or directly copy from [dialog.tsx](src/components/ui/dialog.tsx) and [drawer.tsx](src/components/ui/drawer.tsx).
