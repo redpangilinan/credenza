@@ -14,12 +14,10 @@ The easiest way to install Credenza is through the shadcn registry:
 pnpm dlx shadcn@latest add https://credenza.rdev.pro/r/credenza.json
 ```
 
-You can also use npm or yarn:
+You can also use npm:
 
 ```bash
 npx shadcn@latest add https://credenza.rdev.pro/r/credenza.json
-# or
-yarn dlx shadcn@latest add https://credenza.rdev.pro/r/credenza.json
 ```
 
 ### Manual Installation
