@@ -1,20 +1,20 @@
 {
-	"$schema": "https://ui.shadcn.com/schema/registry.json",
-	"name": "credenza",
-	"homepage": "https://credenza.rdev.pro",
-	"items": [
-		{
-			"name": "credenza",
-			"type": "registry:component",
-			"title": "Credenza",
-			"description": "Ready-made responsive modal component",
-			"registryDependencies": ["dialog", "drawer", "use-mobile"],
-			"files": [
-				{
-					"type": "registry:component",
-					"path": "src/components/ui/credenza.tsx"
-				}
-			]
-		}
-	]
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "credenza",
+  "homepage": "https://credenza.rdev.pro",
+  "items": [
+    {
+      "name": "credenza",
+      "type": "registry:component",
+      "title": "Credenza",
+      "description": "Ready-made responsive modal component",
+      "registryDependencies": ["dialog", "drawer", "use-mobile"],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/components/ui/credenza.tsx"
+        }
+      ]
+    }
+  ]
 }
