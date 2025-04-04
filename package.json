@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format:write": "pnpm prettier ./src --write",
-    "format:check": "pnpm prettier ./src --check"
+    "format:check": "pnpm prettier ./src --check",
+    "registry:build": "shadcn build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
@@ -39,6 +40,7 @@
     "postcss": "^8",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
+    "shadcn": "2.4.0-canary.17",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
